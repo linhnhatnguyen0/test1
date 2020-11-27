@@ -604,6 +604,7 @@ a:hover {
   height: 100vh;
   position: relative;
   color: #fff;
+  width: fit-content;
 }
 
 .intro .intro-content {
