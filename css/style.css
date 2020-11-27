@@ -1822,6 +1822,9 @@ ol {
   .hero__slider.owl-carousel .owl-dots {
     max-width: 930px !important;
   }
+  video{
+    max-width: 930px !important;
+  }
 }
 /* Tablet Device = 768px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1946,6 +1949,9 @@ ol {
 
   .header__nav__option {
     display: none;
+  }
+  video{
+    max-width: 768px !important;
   }
 }
 /* Wide Mobile = 480px */
@@ -2127,6 +2133,9 @@ ol {
 
   .blog__details__quote {
     padding: 30px 45px 35px 35px;
+  }
+  video{
+    max-width: 480px !important;
   }
 }
 /* Small Device = 320px */
