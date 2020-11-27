@@ -101,18 +101,6 @@ a:hover {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.overlay-mf {
-  background-color: #0078ff;
-}
-
-.overlay-mf {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
 
 .paralax-mf {
   position: relative;
