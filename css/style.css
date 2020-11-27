@@ -611,7 +611,7 @@ a:hover {
 //--//-->   INTRO
 ======================================*/
 video{
-  padding-top: 100px;
+  padding-top: 500px;
 }
 .intro {
   height: 100vh;
@@ -622,6 +622,9 @@ video{
 .intro .intro-content {
   text-align: center;
   position: absolute;
+}
+.intro.route.bg-image{
+  padding-top:500px;
 }
 
 .intro .overlay-itro {
