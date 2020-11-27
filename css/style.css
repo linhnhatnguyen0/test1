@@ -142,6 +142,11 @@ ol {
 }
 
 .set-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+video{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,7 +159,7 @@ ol {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  }
+}
 .spad {
   padding-top: 100px;
   padding-bottom: 100px;
