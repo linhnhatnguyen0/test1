@@ -101,6 +101,18 @@ a:hover {
   transform: translateX(-50%) translateY(-50%);
 }
 
+.overlay-mf {
+
+}
+
+.overlay-mf {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 
 .paralax-mf {
   position: relative;
@@ -611,14 +623,14 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   left: 0px;
   padding: 0;
   height: 100%;
   width: 100%;
-  opacity: .9;
+
 }
 
 .intro .intro-title {
@@ -626,7 +638,6 @@ a:hover {
   font-weight: 600;
   font-size: 3rem;
   z-index: -1;
-  position: relative;
 }
 
 .intro .intro-subtitle {
