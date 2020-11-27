@@ -625,6 +625,8 @@ a:hover {
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+  z-index: -1;
+  position: relative;
 }
 
 .intro .intro-subtitle {
