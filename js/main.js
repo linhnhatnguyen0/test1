@@ -1,10 +1,10 @@
 /*  ---------------------------------------------------
-    Template Name: Violet 
-    Description: Violet ecommerce Html Template
-    Author: Colorlib
+    Template Name: Dreams
+    Description: Dreams wedding template
+    Author: Colorib
     Author URI: https://colorlib.com/
     Version: 1.0
-    Created: Colorlib
+    Created: Colorib
 ---------------------------------------------------------  */
 
 'use strict';
@@ -19,10 +19,14 @@
         $("#preloder").delay(200).fadeOut("slow");
 
         /*------------------
-		    Product filter
-	    --------------------*/
-        if ($('#product-list').length > 0) {
-            var containerEl = document.querySelector('#product-list');
+            Portfolio filter
+        --------------------*/
+        $('.portfolio__filter li').on('click', function () {
+            $('.portfolio__filter li').removeClass('active');
+            $(this).addClass('active');
+        });
+        if ($('.portfolio__gallery').length > 0) {
+            var containerEl = document.querySelector('.portfolio__gallery');
             var mixer = mixitup(containerEl);
         }
     });
@@ -35,139 +39,144 @@
         $(this).css('background-image', 'url(' + bg + ')');
     });
 
+    //Masonary
+    $('.work__gallery').masonry({
+        itemSelector: '.work__item',
+        columnWidth: '.grid-sizer',
+        gutter: 10
+    });
+
     /*------------------
 		Navigation
 	--------------------*/
     $(".mobile-menu").slicknav({
-        appendTo: '.header-section',
-        allowParentLinks: true,
-        closedSymbol: '<i class="fa fa-angle-right"></i>',
-		openedSymbol: '<i class="fa fa-angle-down"></i>'
+        prependTo: '#mobile-menu-wrap',
+        allowParentLinks: true
     });
 
     /*------------------
-		Search model
+		Hero Slider
 	--------------------*/
-	$('.search-trigger').on('click', function() {
-		$('.search-model').fadeIn(400);
-	});
-
-	$('.search-close-switch').on('click', function() {
-		$('.search-model').fadeOut(400,function(){
-			$('#search-input').val('');
-		});
-	});
-
-    /*------------------
-        Carousel Slider
-    --------------------*/
-     $(".hero-items").owlCarousel({
+    $('.hero__slider').owlCarousel({
         loop: true,
-        margin: 0,
-        nav: true,
-        items: 1,
         dots: true,
+        mouseDrag: false,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        smartSpeed: 1200,
-        autoplayHoverPause: true,
-        mouseDrag: false,
-        autoplay: false,
-    });
-
-    /*------------------
-        Carousel Slider
-    --------------------*/
-    $(".logo-items").owlCarousel({
-        loop: true,
-		nav: false,
-		dots: false,
-		margin : 40,
-		autoplay: true,
-        responsive: {
-            0: {
-                items: 2
-            },
-            480: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            992: {
-                items: 5
-            }
-        }
-    });
-
-
-    /*------------------
-        Carousel Slider
-    --------------------*/
-    $(".product-slider").owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
         items: 1,
-        dots: true,
+        margin: 0,
+        smartSpeed: 1200,
+        autoHeight: false,
         autoplay: true,
     });
-    
+
+    var dot = $('.hero__slider .owl-dot');
+    dot.each(function () {
+        var index = $(this).index() + 1;
+        if (index < 10) {
+            $(this).html('0').append(index);
+        } else {
+            $(this).html(index);
+        }
+    });
 
     /*------------------
-        Magnific Popup
+        Testimonial Slider
     --------------------*/
-    $('.pop-up').magnificPopup({
-        type: 'image'
-    });
-
-    /*-------------------
-		Sort Select
-	--------------------- */
-    $('.sort').niceSelect();
-
-    /*-------------------
-		Cart Select
-	--------------------- */
-    $('.cart-select').niceSelect();
-
-    /*-------------------
-		Quantity change
-	--------------------- */
-    var proQty = $('.pro-qty');
-    proQty.prepend('<span class="dec qtybtn">-</span>');
-    proQty.append('<span class="inc qtybtn">+</span>');
-    proQty.on('click', '.qtybtn', function () {
-        var $button = $(this);
-        var oldValue = $button.parent().find('input').val();
-        if ($button.hasClass('inc')) {
-            var newVal = parseFloat(oldValue) + 1;
-        } else {
-            // Don't allow decrementing below zero
-            if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
+    $(".testimonial__slider").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 3,
+        dots: true,
+        dotsEach: 2,
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+        responsive: {
+            992: {
+                items: 3
+            },
+            768: {
+                items: 2
+            },
+            320: {
+                items: 1
             }
         }
-        $button.parent().find('input').val(newVal);
     });
 
-    /*-------------------
-		Radio Btn
-	--------------------- */
-    $(".shipping-info .cs-item label").on('click', function () {
-        $(".shipping-info .cs-item label").removeClass('active');
-        $(this).addClass('active');
+    /*------------------
+        Latest Slider
+    --------------------*/
+    $(".latest__slider").owlCarousel({
+        loop: true,
+        margin: 0,
+        items: 3,
+        dots: true,
+        dotsEach: 2,
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+        responsive: {
+            992: {
+                items: 3
+            },
+            768: {
+                items: 2
+            },
+            320: {
+                items: 1
+            }
+        }
     });
 
-    $(".checkout-form .diff-addr label").on('click', function () {
-        $(this).toggleClass('active');
+    /*------------------
+        Logo Slider
+    --------------------*/
+    $(".logo__carousel").owlCarousel({
+        loop: true,
+        margin: 100,
+        items: 6,
+        dots: false,
+        smartSpeed: 1200,
+        autoHeight: false,
+        autoplay: true,
+        responsive: {
+            992: {
+                items: 5
+            },
+            768: {
+                items: 4
+            },
+            480: {
+                items: 3
+            },
+            320: {
+                items: 2
+            }
+        }
     });
 
-    $(".payment-method ul li label").on('click', function () {
-        $(this).toggleClass('active');
+    /*------------------
+        Video Popup
+    --------------------*/
+    $('.video-popup').magnificPopup({
+        type: 'iframe'
+    });
+
+    /*------------------
+        Counter
+    --------------------*/
+    $('.counter_num').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
     });
 
 })(jQuery);
