@@ -1,446 +1,581 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+<!DOCTYPE html>
+<html lang="zxx">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Jony</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videograph | Template</title>
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
 
-    <!-- header-start -->
-    <header>
-        <div class="header-area ">
-            <div id="sticky-header" class="main-header-area">
-                <div class="container-fluid ">
-                    <div class="header_bottom_border">
-                        <div class="row align-items-center">
-                            <div class="col-xl-3 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html">
-                                        <img src="img/logo.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-7">
-                                <div class="main-menu  d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="Works.html">Works</a></li>
-                                            <li><a href="Services.html">Services</a></li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                        <li><a href="works_details.html">work details</a></li>
-                                                        <li><a href="elements.html">elements</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="about.html">about</a></li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a href="#">Let’s Talk</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./services.html">Services</a></li>
+                                <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./about.html">About</a></li>
+                                        <li><a href="./portfolio.html">Portfolio</a></li>
+                                        <li><a href="./blog.html">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
                         </div>
                     </div>
-
                 </div>
             </div>
+            <div id="mobile-menu-wrap"></div>
         </div>
     </header>
-    <!-- header-end -->
+    <!-- Header End -->
 
-    <!-- slider_area_start -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="img-face">
-    <source src="img/back3.mp4" type="video/mp4">
-  </video>
-    <!-- slider_area_end -->
-
-    <div class="download_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-10">
-                    <div class="download_text">
-                        <h3>I’m a Creative director based on New York, who loves clean, simple & unique design. I also enjoy crafting </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="download_left">
-                        <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.
-                        </p>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget </p>
-                        <a href="#" class="boxed-btn3-line">Download CV</a>
-                    </div>
-                </div>
-                <div class="col-lg-5 offset-lg-1 col-md-6">
-                    <div class="progress_skills">
-                        <div class="single_progress">
-                            <div class="label d-flex justify-content-between">
-                                <span>Wireframing</span>
-                                <span>90%</span>
-                            </div>
-                                <div class="progress">
-                                        <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
-                        </div>
-                        <div class="single_progress">
-                                <div class="label d-flex justify-content-between">
-                                        <span>UI/UX</span>
-                                        <span>70%</span>
-                                    </div>
-                                <div class="progress">
-                                        <div class="progress-bar " role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
-                        </div>
-                        <div class="single_progress">
-                                <div class="label d-flex justify-content-between">
-                                        <span>Interaction design</span>
-                                        <span>45%</span>
-                                    </div>
-                                <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- service_area start  -->
-    <div class="service_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-50">
-                        <h3>My Services</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/1.svg" alt="">
-                        </div>
-                        <h3>
-                                Web & Mobile Design
-                        </h3>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/2.svg" alt="">
-                        </div>
-                        <h3>
-                                Web Development
-                        </h3>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/3.svg" alt="">
-                        </div>
-                        <h3>
-                                E-commerce
-                        </h3>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- service_area end  -->
-
-    <!-- gallery_area start  -->
-    <div class="gallery_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-50">
-                        <h3>My Works</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-10">
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/1.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Mobile App</span>
-                                    <a href="works_details.html"><h4>Colorlib App Project</h4></a>
-                                </div>
-                            </div>
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/2.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Mobile App</span>
-                                    <a href="works_details.html"><h4>Colorlib App Project</h4></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/3.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Mobile App</span>
-                                    <a href="works_details.html"><h4>Colorlib App Project</h4></a>
-                                </div>
-                            </div>
-                            <div class="single_gallery">
-                                <div class="thumb">
-                                    <img src="img/gallery/4.png" alt="">
-                                </div>
-                                <div class="gallery_heading">
-                                    <span>Mobile App</span>
-                                    <a href="works_details.html"><h4>Colorlib App Project</h4></a>
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>For website and video editing</span>
+                                <h2>Videographer’s Portfolio</h2>
+                                <a href="#" class="primary-btn">See more about us</a>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="more_works">
-                                    <a class="boxed-btn3-line" href="#">More Works</a>
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>For website and video editing</span>
+                                <h2>Videographer’s Portfolio</h2>
+                                <a href="#" class="primary-btn">See more about us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="hero__text">
+                                <span>For website and video editing</span>
+                                <h2>Videographer’s Portfolio</h2>
+                                <a href="#" class="primary-btn">See more about us</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- gallery_area end  -->
+    </section>
+    <!-- Hero Section End -->
 
-        <!-- testimonial_area  -->
-        <div class="testimonial_area ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title">
-                            <h3>What Clients say</h3>
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="services__title">
+                        <div class="section-title">
+                            <span>Our services</span>
+                            <h2>What We do?</h2>
                         </div>
+                        <p>If you hire a videographer of our team you will get a video professional to make a custom
+                            video for your business and, once the project is over.</p>
+                        <a href="#" class="primary-btn">View all services</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="testmonial_active owl-carousel">
-                            <div class="single_carousel">
-                                <div class="row">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="single_testmonial">
-                                            <p>“There are many variations of passages of Lorem Ipsum available, but the majority
-                                                have suffered alteration in some form by injected humour or randomised words
-                                                which don’t look even slightly believable. If you are going to use a passage.
-                                            </p>
-                                            <div class="testmonial_author">
-                                                <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
-                                                </div>
-                                                <div class="author_name">
-                                                    <h3>Kalvin Piterson</h3>
-                                                    <span>Business Owner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-1.png" alt="">
                                 </div>
+                                <h4>Motion graphics</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
                             </div>
-                            <div class="single_carousel">
-                                <div class="row">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="single_testmonial">
-                                            <p>“There are many variations of passages of Lorem Ipsum available, but the majority
-                                                have suffered alteration in some form by injected humour or randomised words
-                                                which don’t look even slightly believable. If you are going to use a passage.
-                                            </p>
-                                            <div class="testmonial_author">
-                                                <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
-                                                </div>
-                                                <div class="author_name">
-                                                    <h3>Kalvin Piterson</h3>
-                                                    <span>Business Owner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-2.png" alt="">
                                 </div>
+                                <h4>Scriptwriting and editing</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
                             </div>
-                            <div class="single_carousel">
-                                <div class="row">
-                                    <div class="col-xl-9 col-md-9">
-                                        <div class="single_testmonial">
-                                            <p>“There are many variations of passages of Lorem Ipsum available, but the majority
-                                                have suffered alteration in some form by injected humour or randomised words
-                                                which don’t look even slightly believable. If you are going to use a passage.
-                                            </p>
-                                            <div class="testmonial_author">
-                                                <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
-                                                </div>
-                                                <div class="author_name">
-                                                    <h3>Kalvin Piterson</h3>
-                                                    <span>Business Owner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-3.png" alt="">
                                 </div>
+                                <h4>Video distribution</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="services__item">
+                                <div class="services__item__icon">
+                                    <img src="img/icons/si-4.png" alt="">
+                                </div>
+                                <h4>Video hosting</h4>
+                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our
+                                    post production services can put the finishing touches.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /testimonial_area  -->
-    
+    </section>
+    <!-- Services Section End -->
 
-    <!-- footer start -->
+    <!-- Work Section Begin -->
+    <section class="work">
+        <div class="work__gallery">
+            <div class="grid-sizer"></div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-1.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-2.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-3.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item large__item set-bg" data-setbg="img/work/work-4.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-5.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item small__item set-bg" data-setbg="img/work/work-6.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+            </div>
+            <div class="work__item wide__item set-bg" data-setbg="img/work/work-7.jpg">
+                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                        class="fa fa-play"></i></a>
+                <div class="work__item__hover">
+                    <h4>VIP Auto Tires & Service</h4>
+                    <ul>
+                        <li>eCommerce</li>
+                        <li>Magento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Work Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter">
+        <div class="container">
+            <div class="counter__content">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-1.png" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Compled Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item second__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-2.png" alt="">
+                                <h2 class="counter_num">1068</h2>
+                                <p>Happy clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item third__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-3.png" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Perspective clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="counter__item four__item">
+                            <div class="counter__item__text">
+                                <img src="img/icons/ci-4.png" alt="">
+                                <h2 class="counter_num">230</h2>
+                                <p>Compled Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title team__title">
+                        <span>Nice to meet</span>
+                        <h2>OUR Team</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+                        <div class="team__item__text">
+                            <h4>AMANDA STONE</h4>
+                            <p>Videographer</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
+                        <div class="team__item__text">
+                            <h4>AMANDA STONE</h4>
+                            <p>Videographer</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
+                        <div class="team__item__text">
+                            <h4>AMANDA STONE</h4>
+                            <p>Videographer</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.jpg">
+                        <div class="team__item__text">
+                            <h4>AMANDA STONE</h4>
+                            <p>Videographer</p>
+                            <div class="team__item__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 p-0">
+                    <div class="team__btn">
+                        <a href="#" class="primary-btn">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title center-title">
+                        <span>Our Blog</span>
+                        <h2>Blog Update</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="latest__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>Bumper Ads: How to Tell a Story in 6 Seconds</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog__item latest__item">
+                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
+                            <ul>
+                                <li>Jan 03, 2020</li>
+                                <li>05 Comment</li>
+                            </ul>
+                            <p>We recently launched a new website for a Vital client and wanted to share some of the
+                                cool features we were able...</p>
+                            <a href="#">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
+
+    <!-- Call To Action Section Begin -->
+    <section class="callto spad set-bg" data-setbg="img/callto-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="callto__text">
+                        <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
+                        <p>INC5000, Best places to work 2019</p>
+                        <a href="#">Start your stories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Begin -->
     <footer class="footer">
-        <div class="footer_top">
-            <div class="container">
+        <div class="container">
+            <div class="footer__top">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="lets_talk">
-                            <h3>Do you have any Project? <a href="#">Let’s Talk</a> </h3>
-                            <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="single_links d-flex justify-content-between align-items-center">
-                            <span>Behance</span>
-                            <a href="#"> <i class="fa fa-behance"></i> </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single_links d-flex justify-content-between align-items-center">
-                            <span>Dribbble</span>
-                            <a href="#"> <i class="fa fa-dribbble"></i> </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single_links d-flex justify-content-between align-items-center">
-                            <span>Medium</span>
-                            <a href="#"> <i class="fa fa-medium"></i> </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single_links d-flex justify-content-between align-items-center">
-                            <span>Linkedin</span>
-                            <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
+            <div class="footer__option">
                 <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About us</h5>
+                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
+                                production company specializing.</p>
+                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Who we are</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Our work</h5>
+                            <ul>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Latest</a></li>
+                                <li><a href="#">Browse Archive</a></li>
+                                <li><a href="#">Video for web</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <p class="footer__copyright__text">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script>
+                            All rights reserved | This template is made with <i class="fa fa-heart-o"
+                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                         </p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <!--/ footer end  -->
+    <!-- Footer Section End -->
 
-    <!-- link that opens popup -->
-    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <!-- <script src="js/gijgo.min.js"></script> -->
-    <script src="js/slick.min.js"></script>
-
-
-
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
