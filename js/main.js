@@ -29,7 +29,7 @@
             var containerEl = document.querySelector('.portfolio__gallery');
             var mixer = mixitup(containerEl);
         }
-        $(".porfolio__filter li[data-filter='.branding']").click();
+        $(".portfolio__filter li[data-filter='.branding']").click();
     });
 
     /*------------------
