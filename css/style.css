@@ -1823,7 +1823,8 @@ ol {
     max-width: 930px !important;
   }
   video{
-    max-width: 910px !important;
+    padding-top: 100px;
+    max-width: 1020px !important;
   }
 }
 /* Tablet Device = 768px */
@@ -1951,7 +1952,8 @@ ol {
     display: none;
   }
   video{
-    max-width: 728px !important;
+    padding-top: 100px;
+    max-width: 750px !important;
   }
 }
 /* Wide Mobile = 480px */
@@ -2135,7 +2137,8 @@ ol {
     padding: 30px 45px 35px 35px;
   }
   video{
-    max-width: 430px !important;
+    max-width: 350px !important;
+    padding-top: 100px;
   }
 }
 /* Small Device = 320px */
@@ -2176,5 +2179,9 @@ ol {
 
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
+  }
+  video{
+    max-width: 420px !important;
+    padding-top: 100px;
   }
 }
