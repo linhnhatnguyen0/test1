@@ -163,6 +163,10 @@
     $('.video-popup').magnificPopup({
         type: 'iframe'
     });
+    document.getElementbyId('buttonner').addEventListener('click',
+    function(){
+        document.querySelector('.bg-modal').style.display='flex';
+    })
 
     /*------------------
         Counter
