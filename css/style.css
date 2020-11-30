@@ -1359,7 +1359,7 @@ ol {
 }
 .blog__item:hover {
   border: 1px solid transparent !important;
-  background-color: #8904B1;
+  background: url("../img/blog/darktech2.jpg");
   background-size: cover;
 }
 .blog__item:hover ul li {
