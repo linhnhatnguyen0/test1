@@ -23,3 +23,11 @@ p{
 .slider-height2 .d-flex .align-items-center{
 	background: url("img/backgroundhobbies.jpg");
 }
+img{
+	padding-top:30px;
+	padding-bottom: 30px;
+}
+.newne{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
